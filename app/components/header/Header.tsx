@@ -13,9 +13,9 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+   <header className="sticky top-0 z-50 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
     <div
- className={`relative mt-5 border border-white/20 bg-black/80 backdrop-blur-md transition-all duration-300 ${
+className={`relative mt-5 border border-white/10 bg-black/60 backdrop-blur-xl transition-all duration-300 ${
   open ? "rounded-3xl" : "rounded-full"
 }`}
 >

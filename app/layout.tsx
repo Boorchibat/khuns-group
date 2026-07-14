@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
 
 import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
@@ -25,15 +23,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${inter.className} min-h-full flex flex-col antialiased`}
+        className={`${inter.className} min-h-full flex flex-col antialiased relative`}
       >
-        
-          <Header />
-          <div className="mx-[100px] flex min-h-full flex-col">
-          <main className="flex-1">{children}</main>
-          </div>
-          <Footer />
-   
+      <div className="fixed top-0 left-0 w-full z-50">
+  <Header />
+</div>
+
+        <div className=" flex min-h-full flex-col">
+          <main className="flex-1]">{children}</main>
+        </div>
+
+        <Footer />
       </body>
     </html>
   );
