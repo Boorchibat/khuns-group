@@ -4,6 +4,7 @@ import React from "react";
 const Page = () => {
   return (
     <div className="w-full">
+
       <section className="relative h-screen w-full overflow-hidden">
         <video
           className="absolute top-0 left-0 h-full w-full object-cover"
@@ -25,6 +26,7 @@ const Page = () => {
               width={500}
               height={500}
               className="w-[400px] sm:w-[400px] md:w-[500px] lg:w-[500px] h-auto"
+              priority
             />
 
             <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-white/80">
@@ -33,12 +35,30 @@ const Page = () => {
             </p>
           </div>
         </div>
+
+        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent via-white/20 to-white z-10" />
       </section>
-      <section className="px-6 sm:px-10 lg:px-[100px] py-16 sm:py-24">
-        <div className="flex items-center justify-center gap-x-5">
-          <div className="w-[300px] h-[200px] bg-gray-300"></div>
-          <div className="w-[300px] h-[200px] bg-gray-300"></div>
-          <div className="w-[300px] h-[200px] bg-gray-300"></div>
+
+      <section className="px-6 sm:px-10 lg:px-[100px] pb-16 sm:pb-24">
+        <div className="relative -mt-28 z-20 flex items-center justify-center gap-5 mb-12">
+          <div className="w-[400px] h-[200px] bg-white/90 border-2 border-khuns-green rounded-lg flex justify-center items-center flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+            <h1 className="text-[40px] font-bold text-khuns-green">1992</h1>
+            <p className="text-lg text-khuns-green">Year Established</p>
+          </div>
+
+          <div className="w-[400px] h-[200px] bg-white/90 border-2 border-khuns-green rounded-lg flex justify-center items-center flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+            <h1 className="text-[40px] font-bold text-khuns-green">20+</h1>
+            <p className="text-lg text-khuns-green">Partner Companies</p>
+          </div>
+
+          <div className="w-[400px] h-[200px] bg-white/90 border-2 border-khuns-green rounded-lg flex justify-center items-center flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+            <h1 className="text-[40px] font-bold text-khuns-green">
+              34 Years
+            </h1>
+            <p className="text-lg font-bold text-khuns-green">
+              Years of Experience
+            </p>
+          </div>
         </div>
 
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
