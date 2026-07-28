@@ -1,8 +1,9 @@
-import React from 'react'
+"use client"
+import { Contact } from '../components/Contact'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className="py-12"><Contact /></div>
   )
 }
 export default page

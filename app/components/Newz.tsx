@@ -2,6 +2,7 @@ import { motion, Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { NewsCard } from "./NewsCard";
 
 type News = {
   Image: string[];
@@ -9,6 +10,7 @@ type News = {
   description: string;
   date: string;
   Type: "News";
+  Id: number;
 };
 
 type NewzProps = {
@@ -31,6 +33,8 @@ export const Newz = ({ News }: NewzProps) => {
       transition: { staggerChildren: 0.15 },
     },
   };
+
+  const threeNews = News.slice(0, 3);
   return (
     <section className="px-6 sm:px-10 lg:px-[100px] mt-16 md:mt-20 w-full pb-20">
       <div className="max-full flex flex-col mx-0 sm:mx-8">
@@ -73,7 +77,7 @@ export const Newz = ({ News }: NewzProps) => {
         variants={staggerContainer}
         className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"
       >
-        {News.map((news, index) => (
+        {threeNews.map((news, index) => (
           <motion.div
             key={index}
             variants={fadeUp}
@@ -87,39 +91,7 @@ export const Newz = ({ News }: NewzProps) => {
          cursor-pointer
        "
           >
-            <div className="relative h-56 sm:h-64 w-full overflow-hidden">
-              <Image
-                src={news.Image[0]}
-                alt={news.title}
-                fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                style={{
-                  transformOrigin: "center",
-                  backfaceVisibility: "hidden",
-                }}
-              />
-
-              <div className="absolute -bottom-px left-0 w-full h-24 bg-gradient-to-b from-transparent via-white/60 to-white pointer-events-none" />
-            </div>
-
-            <div className="flex flex-col p-6 flex-1">
-              <p className="text-sm text-gray-500 mb-2 transition-colors duration-300 group-hover:text-khuns-green">
-                {news.date}
-              </p>
-
-              <h3 className="text-xl sm:text-[25px] font-bold text-black line-clamp-2 transition-colors duration-300 group-hover:text-khuns-green">
-                {news.title}
-              </h3>
-
-              <p className="text-gray-600 mt-3 line-clamp-3 flex-1 transition-colors duration-300 group-hover:text-khuns-green">
-                {news.description}
-              </p>
-
-              <button className="mt-4 self-start bg-khuns-green text-white px-5 py-2 rounded-full font-medium transition-colors duration-300 hover:bg-khuns-green/90">
-                Read More →
-              </button>
-            </div>
+           <NewsCard  news={news} />
           </motion.div>
         ))}
       </motion.div>

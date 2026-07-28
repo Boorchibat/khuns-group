@@ -1,8 +1,11 @@
-import React from 'react'
+"use client";
+import { WhatWeDo } from "../components/WhatWeDo";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
-export default page
+    <div>
+      <WhatWeDo />
+    </div>
+  );
+};
+export default page;
