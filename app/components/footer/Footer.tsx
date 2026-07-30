@@ -7,7 +7,6 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-khuns-green px-6 sm:px-10 lg:px-20 xl:px-32">
       <div className="flex flex-col lg:flex-row justify-between gap-12 py-12 text-white">
-        
         <div className="flex flex-col gap-5 lg:w-1/2">
           <Image
             src="/KhunsGroupLogo.png"
@@ -18,18 +17,22 @@ export const Footer = () => {
 
           <p className="text-sm sm:text-base text-white/90 lg:w-4/5">
             Khuns Group is a widely recognized leader in its field, dedicated to
-            providing exceptional services and solutions to our clients. Focusing
-            on meat manufacturing, Khuns Group is one of the largest companies in
-            Mongolia selling meat products to the world.
+            providing exceptional services and solutions to our clients.
+            Focusing on meat manufacturing, Khuns Group is one of the largest
+            companies in Mongolia selling meat products to the world.
           </p>
 
-      
           <div className="flex items-center gap-4 pt-2">
             <Button
               size="icon"
               className="h-12 w-12 rounded-full border border-white/70 bg-white/70 backdrop-blur-sm transition hover:scale-110 hover:bg-white"
             >
-              <Image src="/facebook.svg" alt="Facebook" width={24} height={24} />
+              <Image
+                src="/facebook.svg"
+                alt="Facebook"
+                width={24}
+                height={24}
+              />
             </Button>
 
             <Button
@@ -48,10 +51,7 @@ export const Footer = () => {
           </div>
         </div>
 
-   
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:w-1/2">
-          
-          
           <div className="flex flex-col gap-4">
             <h2 className="text-lg font-bold mb-2">Company</h2>
 
@@ -73,12 +73,13 @@ export const Footer = () => {
             ))}
           </div>
 
-        
           <div className="flex flex-col gap-4">
             <h2 className="text-lg font-bold mb-2">Contact Us</h2>
 
-            <p className="text-white/90">123 Main Street</p>
-            <p className="text-white/90">Anytown, USA 12345</p>
+            <p className="text-white/90">
+              Eco International Tower, Peace Avenue, 1st khoroo, SBD,
+              Ulaanbaatar, Mongolia
+            </p>
 
             <a href="mailto:info@khunsgroup.com" className="hover:underline">
               info@khunsgroup.com

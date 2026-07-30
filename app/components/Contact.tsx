@@ -88,7 +88,9 @@ export const Contact = () => {
               <LocationEditIcon className="w-6 h-6 text-khuns-green mb-2" />
               <h3 className="text-xl font-bold text-khuns-green">Location</h3>
               <p className="text-gray-600 mt-2 text-center">
-                Ulaanbaatar, Mongolia
+              Eco International Tower,
+Peace Avenue, 1st khoroo, SBD,
+Ulaanbaatar, Mongolia
               </p>
             </motion.div>
           </motion.div>
