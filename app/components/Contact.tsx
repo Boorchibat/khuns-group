@@ -70,14 +70,14 @@ export const Contact = () => {
               </motion.div>
             </a>
 
-            <a href="tel:9803-2222">
+            <a href="tel:+7718-2222">
               <motion.div
                 variants={fadeUp}
                 className="bg-gray-200 border-2 border-khuns-green rounded-lg p-6 flex flex-col items-center transition-transform duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <PhoneIcon className="w-6 h-6 text-khuns-green mb-2" />
                 <h3 className="text-xl font-bold text-khuns-green">Phone</h3>
-                <p className="text-gray-600 mt-2 text-center">9803-2222</p>
+                <p className="text-gray-600 mt-2 text-center">7718-2222</p>
               </motion.div>
             </a>
 
@@ -88,9 +88,8 @@ export const Contact = () => {
               <LocationEditIcon className="w-6 h-6 text-khuns-green mb-2" />
               <h3 className="text-xl font-bold text-khuns-green">Location</h3>
               <p className="text-gray-600 mt-2 text-center">
-              Eco International Tower,
-Peace Avenue, 1st khoroo, SBD,
-Ulaanbaatar, Mongolia
+                Eco International Tower, Peace Avenue, 1st khoroo, SBD,
+                Ulaanbaatar, Mongolia
               </p>
             </motion.div>
           </motion.div>

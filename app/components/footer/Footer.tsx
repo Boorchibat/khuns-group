@@ -23,31 +23,32 @@ export const Footer = () => {
           </p>
 
           <div className="flex items-center gap-4 pt-2">
-            <Button
-              size="icon"
-              className="h-12 w-12 rounded-full border border-white/70 bg-white/70 backdrop-blur-sm transition hover:scale-110 hover:bg-white"
-            >
-              <Image
-                src="/facebook.svg"
-                alt="Facebook"
-                width={24}
-                height={24}
-              />
-            </Button>
-
-            <Button
-              size="icon"
-              className="h-12 w-12 rounded-full border border-white/70 bg-white/70 backdrop-blur-sm transition hover:scale-110 hover:bg-white"
-            >
-              <Image src="/insta.svg" alt="Instagram" width={24} height={24} />
-            </Button>
-
-            <Button
-              size="icon"
-              className="h-12 w-12 rounded-full border border-white/70 bg-white/70 backdrop-blur-sm transition hover:scale-110 hover:bg-white"
-            >
-              <Image src="/youtube.svg" alt="YouTube" width={24} height={24} />
-            </Button>
+            <Link href="https://www.facebook.com/KhunsGroup/">
+              <Button
+                size="icon"
+                className="h-12 w-12 rounded-full border border-white/70 bg-white/70 backdrop-blur-sm transition hover:scale-110 hover:bg-white"
+              >
+                <Image
+                  src="/facebook.svg"
+                  alt="Facebook"
+                  width={24}
+                  height={24}
+                />
+              </Button>
+            </Link>
+            <Link href="https://www.youtube.com/@KhunsComplex-">
+              <Button
+                size="icon"
+                className="h-12 w-12 rounded-full border border-white/70 bg-white/70 backdrop-blur-sm transition hover:scale-110 hover:bg-white"
+              >
+                <Image
+                  src="/youtube.svg"
+                  alt="YouTube"
+                  width={24}
+                  height={24}
+                />
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -85,8 +86,8 @@ export const Footer = () => {
               info@khunsgroup.com
             </a>
 
-            <a href="tel:+11234567890" className="hover:underline">
-              (123) 456-7890
+            <a href="tel:+7718-2222" className="hover:underline">
+              7718-2222
             </a>
           </div>
         </div>
